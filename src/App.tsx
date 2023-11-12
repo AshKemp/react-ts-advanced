@@ -1,4 +1,5 @@
 import Button from "./components/Button";
+import Container from "./components/Container";
 // import Input from "./components/Input";
 
 function App() {
@@ -6,12 +7,15 @@ function App() {
     <main>
       {/* <Input id="name" label="Your name" type="text" />
       <Input id="age" label="Your age" type="number" /> */}
-      <p>
+      {/* <p>
         <Button href="https://www.google.com">A Link</Button>
       </p>
       <p>
         <Button>A Button</Button>
-      </p>
+      </p> */}
+      <Container as={Button} onClick={() => console.log("Button clicked")}>
+        Click Me
+      </Container>
     </main>
   );
 }
